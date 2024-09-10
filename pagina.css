@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0ffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav{
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px; /* Espacio del contenido interior*/
+}
+.contenido_nav_li{
+    display: inline;
+    margin-right: 10%;
+}
+.contenido_nav_a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold; 
+}
+
+.banner_contenedor{
+    width: 750px;
+    height: auto;
+    margin: 25px auto 0;
+    overflow: hidden;
+}
+
+.banner_contenedor ul{
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 25s infinite;
+}
+
+.banner_contenedor li{
+    list-style: none;
+    width: 100%;
+}
+
+.banner_contenedor img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%}
+    20% {margin-left: -100%}
+    40% {margin-left: -200%}
+    60% {margin-left: -300%}
+    80% {margin-left: -400%}
+    100% {margin-left: 0%}
+}
+
+.parrafo1{
+    text-align: left;
+    margin: 20px auto; 
+    padding: 20px; 
+    max-width: 800px; 
+    line-height: 1.6; 
+    font-size: 16px;
+}
+
+.contenedor_boton{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3a34b1;
+}
